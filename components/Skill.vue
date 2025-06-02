@@ -8,7 +8,7 @@ defineProps({
     type: Array,
     required: true
   }
-})
+});
 </script>
 
 <template>

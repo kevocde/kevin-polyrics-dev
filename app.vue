@@ -1,5 +1,5 @@
 <script setup lang="ts">
-let skills = {
+const skills = {
   frontend: {
     title: 'Frontend',
     items: [
@@ -27,6 +27,23 @@ let skills = {
     ]
   }
 };
+
+const references = [
+  {
+    name: 'Mauricio Galindo',
+    review: 'Id eum dignissimos sint earum odio eaque, et necessitatibus ullam recusandae quos facere rem quasi, quis optio. Obcaecati sed possimus adipisci sapiente.',
+    position: 'Lider Técnico',
+    company: 'Millicom',
+    inclination: 'right'
+  },
+  {
+    name: 'Mauricio Galindo',
+    review: 'Id eum dignissimos sint earum odio eaque, et necessitatibus ullam recusandae quos facere rem quasi, quis optio. Obcaecati sed possimus adipisci sapiente.',
+    position: 'Lider Técnico',
+    company: 'Millicom',
+    inclination: 'left',
+  }
+];
 </script>
 
 <template>
@@ -64,6 +81,7 @@ let skills = {
         <h3 class="text-xl text-neutral-500">Friends & Partners</h3>
       </template>
       <template v-slot:body>
+        <Reference v-for="(value, key) in references" :name="value.name" :review="value.review" :position="value.position" :company="value.company" :inclination="value.inclination"/>
       </template>
     </Section>
     <Section id="portfolio">
