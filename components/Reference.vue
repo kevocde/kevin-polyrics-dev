@@ -44,7 +44,7 @@ const toRight = computed(() => {
   <div class="flex">
     <div class="flex flex-nowrap rounded-md p-4">
         <div v-if="toLeft" class="image flex justify-center rounded-full min-w-30 overflow-hidden mr-4 outline-3"><img class="aspect-3/2 object-cover" :src="profileImage" alt=""></div>
-        <div class="flex flex-col justify-center">
+        <div class="flex flex-col justify-center" :class="{'justify-end': toRight, 'text-right': toRight}">
             <p class="mb-4 italic">"{{ review }}"</p>
             <h3 class="font-semibold leading-none">{{ name }}</h3>
             <span class="text-sm text-neutral-500">{{ occupation }}</span>
