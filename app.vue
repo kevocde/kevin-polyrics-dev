@@ -44,6 +44,24 @@ const references = [
     inclination: 'left',
   }
 ];
+
+const links = [
+  {
+    label: 'GitHub',
+    url: 'https://github.com/polyrico',
+    icon: 'github.svg'
+  },
+  {
+    label: 'E-Mail',
+    url: 'mailto:kevind.guzmand@gmail.com',
+    icon: 'maildotru.svg'
+  },
+  {
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/kevocde',
+    icon: 'linkedin.svg'
+  }
+];
 </script>
 
 <template>
@@ -98,6 +116,7 @@ const references = [
         <h3 class="text-xl text-neutral-500">Need a Hand?</h3>
       </template>
       <template v-slot:body>
+        <ContactList :links="links"/>
       </template>
     </Section>
   </div>
