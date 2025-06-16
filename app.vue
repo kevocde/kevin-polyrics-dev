@@ -62,10 +62,15 @@ const links = [
     icon: 'linkedin.svg'
   }
 ];
+
+const sections = [
+  'main', 'skills', 'references', 'portfolio', 'contact',
+];
 </script>
 
 <template>
   <div class="container mx-auto px-36">
+    <ScrollNavigator :ids="sections" />
     <Section id="main">
       <template v-slot:header>
         <h1 class="text-6xl mb-2">Hi, I'm Kevin G</h1>
