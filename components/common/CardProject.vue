@@ -20,7 +20,7 @@
       <div class="footer__title flex-1 text-lg"><span>{{ title }}</span></div>
       <div class="footer__actions flex gap-2 align-center">
         <a target="_blank" :href="github" class="actions__element"><img :src="`icons/github.svg`" class="w-6 accent-color"></a>
-        <a target="_blank" :href="url" class="actions__element text-2xl"><i class="lni lni-link-2-angular-right"></i></a>
+        <a target="_blank" :href="website" class="actions__element text-2xl"><i class="lni lni-link-2-angular-right"></i></a>
       </div>
     </div>
   </div>
@@ -32,7 +32,7 @@
     description: { type: String, default: '' },
     coverImg: { type: String, default: '' },
     github: { type: String, default: '' },
-    url: { type: String, default: '' }
+    website: { type: String, default: '' }
   })
 </script>
 
