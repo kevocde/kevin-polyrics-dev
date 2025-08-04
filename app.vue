@@ -1,26 +1,9 @@
 <template>
   <SectionsMainNav></SectionsMainNav>
-  <SectionsProfile></SectionsProfile>
-  <SectionsResume></SectionsResume>
+  <SectionsProfile id="profile"></SectionsProfile>
+  <SectionsResume id="resume"></SectionsResume>
+  <SectionsWorkingOn id="workingon"></SectionsWorkingOn>
     <div class="container mx-auto px-36">
-    <ScrollNavigator :ids="sections" />
-    <Section id="references" class="hidden">
-      <template v-slot:header>
-        <h2 class="text-4xl text-center mb-2">References</h2>
-        <h3 class="text-xl text-neutral-500">Friends & Partners</h3>
-      </template>
-      <template v-slot:body>
-        <Reference v-for="(value, key) in references" :name="value.name" :review="value.review" :position="value.position" :company="value.company" :inclination="value.inclination"/>
-      </template>
-    </Section>
-    <Section id="portfolio">
-      <template v-slot:header>
-        <h2 class="text-4xl text-center mb-2">Portfolio</h2>
-        <h3 class="text-xl text-neutral-500">What Can I Do?</h3>
-      </template>
-      <template v-slot:body>
-      </template>
-    </Section>
     <Section id="contact">
       <template v-slot:header>
         <h2 class="text-4xl text-center mb-2">Contact</h2>

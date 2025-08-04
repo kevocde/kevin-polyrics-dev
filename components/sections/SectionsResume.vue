@@ -24,7 +24,7 @@
 const skills = {
   frontend: {
     title: 'Frontend',
-    class: 'md:w-80',
+    class: 'mb-6 md:w-80',
     items: [
       { name: 'VueJS', icon: 'vuedotjs.svg', level: 5 },
       { name: 'Lit E.', icon: 'lit.svg', level: 2 },
@@ -33,7 +33,7 @@ const skills = {
   },
   backend: {
     title: 'Backend',
-    class: 'md:w-80',
+    class: 'mb-6 md:w-80',
     items: [
       { name: 'Drupal', icon: 'drupal.svg', level: 4 },
       { name: 'Laravel', icon: 'laravel.svg', level: 4 },
@@ -43,7 +43,7 @@ const skills = {
   },
   other: {
     title: 'Other',
-    class: 'md:w-80',
+    class: 'mb-6 md:w-80',
     items: [
       { name: 'AWS', icon: 'amazonwebservices.svg', level: 3 },
       { name: 'MySQL', icon: 'mysql.svg', level: 4 },
