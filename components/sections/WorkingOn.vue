@@ -1,5 +1,5 @@
 <template>
-  <CommonResponsiveContainer class="workingon bg-white">
+  <CommonResponsiveContainer class="workingon bg-white py-20">
     <div class="workingon__title px-4 text-center font-bold mb-20">
       <h3 class="text-4xl">Working On</h3>
       <p class="text-gray-500 text-md">Projects, Contributions, Ideas and more</p>

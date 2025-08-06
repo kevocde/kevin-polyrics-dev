@@ -22,7 +22,7 @@ const range = (from: any, until: any) => {
       <li v-for="item in items"  class="flex justify-between">
         <div class="flex items-center">
           <i class="mr-4">
-            <img :src="`icons/${item.icon}`" class="w-6 accent-color"></img>
+            <img :src="`/icons/${item.icon}`" class="w-6 accent-color"></img>
           </i>
           <span class="text-gray-500 lg:text-lg">{{ item.name }}</span>
         </div>
@@ -34,7 +34,7 @@ const range = (from: any, until: any) => {
   </div>
 </template>
 
-<style>
+<style scoped>
   .accent-color {
     filter: invert(49%) sepia(7%) saturate(782%) hue-rotate(182deg) brightness(89%) contrast(99%);
   }

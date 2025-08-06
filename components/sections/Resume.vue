@@ -14,13 +14,15 @@
         </div>
       </div>
       <div class="px-3 md:col-span-2 md:flex md:flex-wrap md:justify-center md:gap-8 lg:gap-12">
-        <Skill v-for="(value, key) in skills" :id="key" :title="value.title" :items="value.items" :class="value.class"/>
+        <CommonSkill v-for="(value, key) in skills" :id="key" :title="value.title" :items="value.items" :class="value.class"/>
       </div>
     </div>
   </CommonResponsiveContainer>
 </template>
 
 <script lang="ts" setup>
+import { CommonSkill } from '#components';
+
 const skills = {
   frontend: {
     title: 'Frontend',

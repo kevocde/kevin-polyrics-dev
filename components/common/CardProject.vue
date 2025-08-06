@@ -1,5 +1,5 @@
 <template>
-  <div class="card-project bg-gray-50 transition delay-150 duration-300 ease-in-out shadow-md rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 hover:scale-105">
+  <div class="card-project bg-gray-50 transition delay-150 duration-300 ease-in-out shadow-md rounded-lg overflow-hidden hover:shadow-xl hover:translate-y-1 hover:scale-105">
     <div class="card-project__body h-48 lg:h-64 xl:h-80 overflow-hidden">
       <div v-if="description.trim().length > 0" class="body__description">
         <div class="description__bg" :style="['background-image: url(\'' + coverImg + '\')']"></div>
@@ -19,7 +19,7 @@
     <div class="card-project__footer p-4 flex bg-emerald-400 text-emerald-50">
       <div class="footer__title flex-1 text-lg"><span>{{ title }}</span></div>
       <div class="footer__actions flex gap-2 align-center">
-        <a target="_blank" :href="github" class="actions__element"><img :src="`icons/github.svg`" class="w-6 accent-color"></a>
+        <a target="_blank" :href="github" class="actions__element"><img :src="`/icons/github.svg`" class="w-6 accent-color"></a>
         <a target="_blank" :href="website" class="actions__element text-2xl"><i class="lni lni-link-2-angular-right"></i></a>
       </div>
     </div>
