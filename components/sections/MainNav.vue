@@ -1,5 +1,5 @@
 <template>
-  <CommonResponsiveContainer>
+  <CommonResponsiveContainer class="bg-indigo-50">
     <div class="mobile-nav md:hidden" v-bin="$attrs">
       <nav class="nav overflow-hidden relative">
         <a href="mailto:kevind.guzmand@gmail.com" class="nav__logo p-4 text-2xl leading-[0] block"><i class="lni lni-envelope-1"></i></a>

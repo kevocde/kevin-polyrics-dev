@@ -1,19 +1,21 @@
 <template>
-  <CommonResponsiveContainer class="bg-white resume-ct">
-    <div class="resume justify-center px-4 md:grid md:grid-col-2 md:gap-8">
-      <div class="resume__img mb-8">
-        <div class="img__element outline outline-indigo-400 outline-offset-2"></div>
-      </div>
-      <div class="resume__body flex flex-col mb-8 lg:flex lg:flex-col lg:justify-center ">
-        <h2 class="text-2xl font-bold mb-4 md:text-3xl lg:3xl">Kevin Guzman</h2>
-        <p class="text-gray-600 mb-4 md:text-lg lg:text-xl">
-          <strong class="font-semibold text-emerald-400">Software Engineer</strong>, <strong class="font-semibold text-emerald-400">Back / Front Developer</strong>, with a lot of enthusiasm to continue helping to create software solutions for everyone. <strong class="font-semibold text-emerald-400">With my 10 years of experience in the tech environment</strong>, I have had the opportunity to learn, create, destroy and rebuild software of all kinds. How can I help you?
-        </p>
-        <div class="resume__body__controls flex justify-center">
-          <CommonButtom class="body__controls__item bg-emerald-400" type="link" target="_blank">Download CV</CommonButtom>
+  <CommonResponsiveContainer class="resume">
+    <div class="grid grid-col-1 md:grid-cols-2">
+      <div class="profile__cover px-4 py-8 flex justify-center md:py-12">
+        <div class="conver__img overflow-hidden rounded-2xl outline outline-emerald-500 outline-offset-2 w-48 md:w-64 lg:w-80">
+          <img src="public/profiles/profile.jpg" alt="">
         </div>
       </div>
-      <div class="px-3 md:col-span-2 md:flex md:flex-wrap md:justify-center md:gap-8 lg:gap-12">
+      <div class="profile__resume px-4 md:flex md:flex-col md:justify-center mb-8">
+        <h2 class="font-bold text-2xl mb-4 lg:text-3xl">Kevin Guzman</h2>
+        <p class="text-gray-500 text-md mb-4 lg:text-lg">
+          <strong class="font-semibold text-emerald-400">Software Engineer</strong>, <strong class="font-semibold text-emerald-400">Back / Front Developer</strong>, with a lot of enthusiasm to continue helping to create software solutions for everyone. <strong class="font-semibold text-emerald-400">With my 10 years of experience in the tech environment</strong>, I have had the opportunity to learn, create, destroy and rebuild software of all kinds. How can I help you?
+        </p>
+        <div class="flex">
+          <CommonButtom class="bg-emerald-400 hover:bg-emerald-500 hover:animation-shake" type="link" target="_blank">Download CV</CommonButtom>
+        </div>
+      </div>
+      <div class="profile__skills px-4 md:col-span-2 md:flex md:flex-wrap md:gap-x-8 md:justify-center xl:gap-x-12 xl:py-12">
         <CommonSkill v-for="(value, key) in skills" :id="key" :title="value.title" :items="value.items" :class="value.class"/>
       </div>
     </div>
@@ -56,53 +58,15 @@ const skills = {
 };
 </script>
 
-<style>
-  .resume-ct {
-    height: 90rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+<style lang="scss">
+  .resume {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 
-  .resume__img {
-    display: flex;
-    justify-content: center;
-  }
-
-  .resume__img .img__element {
-    background-image: url('public/profiles/profile.jpg');
-    background-size: 75vw;
-    height: 75vw;
-    width: 75vw;
-    border-radius: 80% 20% 32% 68% / 58% 22% 78% 42% ;
-  }
-
-  @media (width >= 48rem) {
-    .resume-ct {
-      height: 65rem;
-    }
-
-    .resume__img .img__element {
-      background-size: 45vw;
-      height: 45vw;
-      width: 45vw;
-    }
-  }
-
-  @media (width >= 64rem) {
-    .resume-ct {
-      height: 75rem;
-    }
-
-    .resume__body {
-      width: 40vw;
-      max-width: 40rem;
-    }
-
-    .resume__img .img__element {
-      background-size: 27.5rem;
-      height: 27.5rem;
-      width: 27.5rem;
+    .profile__cover {
+      .conver__img {
+        transform: rotate(-2deg);
+      }
     }
   }
 </style>
