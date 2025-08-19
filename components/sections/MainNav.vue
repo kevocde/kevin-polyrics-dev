@@ -6,7 +6,7 @@
         <ul class="nav__links text-end" :class="{'hidden': !mobileMenuShow}">
           <li class="links__item"><a href="#resume" class="block px-4 py-2 cursor-pointer">Resume</a></li>
           <li class="links__item"><a href="#workingon" class="block px-4 py-2 cursor-pointer">Working On</a></li>
-          <li class="links__item"><a href="#reviews" class="block px-4 py-2 cursor-pointer">Reviews</a></li>
+          <li class="links__item"><a href="#workexperience" class="block px-4 py-2 cursor-pointer">Experience</a></li>
           <li class="links__item"><a href="#contact" class="block px-4 py-2 cursor-pointer">Contact Me</a></li>
         </ul>
         <a href="#" class="nav__toggle p-4 text-2xl leading-[0] block absolute right-0 top-0" @click="toggleMobileMenu">
@@ -21,7 +21,7 @@
         <ul class="nav__links text-end flex">
           <li class="links__item"><a href="#resume" class="block p-4 cursor-pointer underline underline-offset-2">Resume</a></li>
           <li class="links__item"><a href="#workingon" class="block p-4 cursor-pointer underline underline-offset-2">Working On</a></li>
-          <li class="links__item"><a href="#reviews" class="block p-4 cursor-pointer underline underline-offset-2">Reviews</a></li>
+          <li class="links__item"><a href="#workexperience" class="block p-4 cursor-pointer underline underline-offset-2">Experience</a></li>
           <li class="links__item"><a href="#contact" class="block p-4 cursor-pointer underline underline-offset-2">Contact Me</a></li>
         </ul>
       </div>
