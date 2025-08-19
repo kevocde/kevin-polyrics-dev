@@ -1,5 +1,5 @@
 <template>
-  <CommonResponsiveContainer class="contact py-20">
+  <CommonResponsiveContainer class="contact">
     <div class="title px-4 text-center">
       <h4 class="text-4xl">Contact Me</h4>
       <p class="text-gray-500 text-md">Need a hand?</p>
@@ -18,6 +18,11 @@
 </script>
 
 <style scoped>
+  .contact {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .accent-color {
     filter: invert(49%) sepia(7%) saturate(782%) hue-rotate(182deg) brightness(89%) contrast(99%);
   }
