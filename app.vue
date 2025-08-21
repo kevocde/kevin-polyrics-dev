@@ -9,6 +9,16 @@
 </template>
 
 <script setup>
+  useSeoMeta({
+    title: 'Kevin Guzman - Software Engineer, Back / Front Developer',
+    ogTitle: 'Kevin Guzman - Software Engineer, Back / Front Developer',
+    description: 'With my 10 years of experience in the tech environment, I have had the opportunity to learn, create, destroy and rebuild software of all kinds. How can I help you?',
+    ogDescription: 'With my 10 years of experience in the tech environment, I have had the opportunity to learn, create, destroy and rebuild software of all kinds. How can I help you?',
+    ogImage: '/profiles/profile.jpg',
+    ogUrl: 'https://kevin.polyrics.dev',
+    ogType: 'website',
+    keywords: 'webdeveloper,development,porfolio,developer,senior,php,laravel,python,vuejs,aws,javascript',
+  })
   const experienices = [
     {
       company: 'Bits Americas SAS',
