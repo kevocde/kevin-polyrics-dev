@@ -12,7 +12,7 @@
           <strong class="font-semibold text-emerald-400">Software Engineer</strong>, <strong class="font-semibold text-emerald-400">Back / Front Developer</strong>, with a lot of enthusiasm to continue helping to create software solutions for everyone. <strong class="font-semibold text-emerald-400">With my 10 years of experience in the tech environment</strong>, I have had the opportunity to learn, create, destroy and rebuild software of all kinds. How can I help you?
         </p>
         <div class="flex">
-          <CommonButtom class="bg-emerald-400 hover:bg-emerald-500 hover:animation-shake" type="link" target="_blank">Download CV</CommonButtom>
+          <CommonButtom class="bg-emerald-400 hover:bg-emerald-500 hover:animation-shake" type="link" target="_blank" href="https://drive.google.com/file/d/1DTnQFNyqZ3EOfqtLO9kq7bVdc8J7-SBc/view?usp=sharing">Download CV</CommonButtom>
         </div>
       </div>
       <div class="profile__skills px-4 md:col-span-2 md:flex md:flex-wrap md:gap-x-8 md:justify-center xl:gap-x-12 xl:py-12">

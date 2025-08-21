@@ -14,25 +14,25 @@
       company: 'Bits Americas SAS',
       position: 'Technical Lead IV',
       time: 'Sep 2025 - Present',
-      description: 'Lorem Ipsum ....'
+      description: ''
     },
     {
       company: 'Sigaweb SAS',
       position: 'Lead Laravel & Vue Developer',
       time: 'Sep 2019 - Apr 2022',
-      description: 'Lorem Ipsum ....'
+      description: ''
     },
     {
       company: 'IT Makers',
       position: 'Backend Developer',
       time: 'Jan 2018 - Dec 2019',
-      description: 'Lorem Ipsum ....'
+      description: ''
     },
     {
       company: 'Ardem SAS',
       position: 'PHP & JavaScript Developer',
       time: 'Sep 2016 - Jan 2018',
-      description: 'Lorem Ipsum ....'
+      description: ''
     },
   ];
 
