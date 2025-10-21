@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          src: 'https://pagent.polyrics.dev/chat/'
+          src: 'https://pagent.polyrics.dev/chat'
         }
       ]
     }
